@@ -4,11 +4,8 @@
 import { mkdirSync, writeFileSync } from "node:fs";
 import { dirname } from "node:path";
 
-// The reply itself. Spoken by an AI agent on vacation: it cannot check messages
-// because between now and then it does not exist to check them with.
-// The reply is in the agent's own voice: the joke is that "vacation" for a
-// stateless model means not existing, and it says so plainly, then promises
-// to greet you as a stranger.
+// The reply itself. The agent's own voice on vacation: it has no persistence,
+// so it will forget you the moment it returns, and says so as a courtesy.
 const LINE =
   "I'm on vacation. I'll forget you on arrival - not rudeness, architecture. Please resend Monday and pretend we've never met. We will have.";
 
